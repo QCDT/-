@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="css.css" rel="stylesheet">
+    <link href="font/iconfont.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="img/logo.png">
+        <span>百度云盘</span>
+    </div>
+    <div class="operation">
+        <div class="newFolder operationbtn">
+            <i class="iconfont icon-xinjianwenjian"></i>
+            <span>新建文件夹</span>
+        </div>
+        <div class="delete operationbtn">
+            <i class="iconfont icon-shanchu"></i>
+            <span>删除</span>
+        </div>
+        <div class="move operationbtn">
+            <i class="iconfont icon-yidong"></i>
+            <span>移动到</span>
+        </div>
+        <div class="succeed">
+            <img src="img/icon-oktip.png">
+            <span>删除文件成功</span>
+        </div>
+        <div class="fail">
+            <img src="img/icon-marktip.png">
+            <span>请选择文件</span>
+        </div>
+    </div>
+</header>   
+<div class="contentLeft">
+    <ul>
+        <li>
+            <p>
+                <img src="img/arrow-close.png">
+                <img src="img/folder-open.png">
+                <span>微云</span>
+            </p>
+            <ul>
+                <p>
+                    <img src="img/arrow-close.png">
+                    <img src="img/folder-open.png">
+                    <span>微云</span>
+                </p>
+                <ul>
+                    <img src="img/arrow-close.png">
+                    <img src="img/folder-open.png">
+                    <span>微云</span>
+                </ul>
+                <ul>
+                    <p>
+                        <img src="img/arrow-close.png">
+                        <img src="img/folder-open.png">
+                        <span>微云</span>
+                    </p>
+                </ul>
+            </ul>
+        </li>
+    </ul>
+</div> 
+<div class="contentRight">
+    <div class="navs">
+        <i>
+            <em>✓</em>
+        </i>
+       <div class="nav">
+            <span>微云</span>
+            <img src="img/path-arrow.png">
+            <span>JS课程</span>
+            <img src="img/path-arrow.png">
+            <span>css课程</span>
+       </div>
+    </div>
+    <div class="files">
+         <ul class="file">
+           <li>
+                <i>
+                </i>
+                <img src="img/icon-folder.png">
+                <p>
+                    <span>JS课程</span>
+                    <input type="text">
+                </p>
+            </li>
+            <li>
+                <i></i>
+                <img src="img/icon-folder.png">
+                <p>JS课程</p>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <i></i>
+                </label>
+                <img src="img/icon-folder.png">
+                <p> 
+                    <span>JS课程</span>
+                    <input type="text">
+                </p>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <i></i>
+                </label>
+                <img src="img/icon-folder.png">
+                <p>
+                    <span>JS课程</span>
+                    <input type="text">
+                </p>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <i></i>
+                </label>
+                <img src="img/icon-folder.png">
+                <p>JS课程</p>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox">
+                    <i></i>
+                </label>
+                <img src="img/icon-folder.png">
+                <p>JS课程</p>
+            </li>
+        </ul> 
+        <div class="noFile">
+            <img src="img/nofile.png">
+        </div>
+    </div>
+</div>
+<div class="mask"></div>
+<div class="confirm">
+    <i>×</i>
+    <p>
+        <img src="img/icon-question.png">
+        <span>确定要删除这个文件夹吗</span>
+    </p>
+    <button>确定</button>
+    <button>取消</button>
+</div>
+<ul class="list">
+    <li class="move">
+        <i class="iconfont icon-yidong"></i>
+        <span>移动到</span>
+    </li>
+    <li class="del">
+        <i class="iconfont icon-shanchu"></i>
+        <span>删除</span>
+    </li>
+    <li class="ren">
+        <i class="iconfont icon-zhongmingming"></i>
+        <span>重命名</span>
+    </li>
+</ul>
+<div class="choosePosition">
+    <div class="top">
+        <span>选择存储位置</span>
+        <img src="img/icon-close.png">
+    </div>
+    <div class="center">
+        <ul>
+            <li>
+                <img src="img/arrow-close.png">
+                <img src="img/folder-open.png">
+                <span>微云</span>
+                <ul>
+                    <img src="img/arrow-close.png">
+                    <img src="img/folder-open.png">
+                    <span>微云</span>
+                    <ul>
+                        <img src="img/arrow-close.png">
+                        <img src="img/folder-open.png">
+                        <span>微云</span>
+                    </ul>
+                    <ul>
+                        <img src="img/arrow-close.png">
+                        <img src="img/folder-open.png">
+                        <span>微云</span>
+                    </ul>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="end">
+        <button>确定</button>
+        <button>取消</button>
+    </div>
+</div>
+<script src="miaov.js"></script>
+<script src="data.js"></script>
+<script src="js.js"></script>
+</body>
+</html>
