@@ -1,0 +1,314 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 700px;
+  background: url(../img/bg.jpg) no-repeat;
+  background-size: 100%;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+header {
+  height: 60px;
+  width: 100%;
+  margin-top: 10px;
+}
+header .logo {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+header .logo img {
+  width: 50.5px;
+  vertical-align: middle;
+}
+header .logo span {
+  font: 20px/60px "Arial";
+  color: white;
+  vertical-align: middle;
+}
+header .navWarp {
+  width: 50%;
+  float: right;
+  margin-top: 15px;
+}
+header .navWarp .nav li {
+  margin-right: 20px;
+  width: 90px;
+  float: left;
+  height: 100%;
+  font-size: 0;
+  perspective: 100px;
+}
+header .navWarp .nav li a {
+  position: relative;
+  float: left;
+  color: black;
+  width: 95px;
+  height: 30px;
+  font: 20px/30px "微软雅黑";
+  transform-style: preserve-3d;
+  transition: 0.5s;
+  transform-origin: center center -15px;
+  cursor: pointer;
+}
+header .navWarp .nav li a:hover {
+  transform: rotateX(-90deg);
+}
+header .navWarp .nav li span {
+  background: #052596;
+  border-radius: 10px;
+  width: 90px;
+  float: left;
+  text-align: center;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  color: white;
+}
+header .navWarp .nav li span:last-child {
+  top: -30px;
+  transform-origin: bottom;
+  transform: rotateX(90deg);
+}
+#home {
+  background: url(../img/bg.jpg) no-repeat;
+  background-size: 100%;
+  color: white;
+}
+#skill {
+  background: url(../img/bg.jpg) no-repeat;
+  background-size: 100%;
+  color: white;
+  overflow: hidden;
+  min-width: 700px;
+}
+#skill a {
+  text-decoration: none;
+}
+#skill p {
+  margin: 0;
+}
+#skill img {
+  border: none;
+  display: block;
+}
+#skill .boxWrap {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  position: relative;
+}
+#skill .box {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+#skill .ring {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+#skill .ring li {
+  position: absolute;
+}
+#skill li.all {
+  transition: all .6s ease;
+}
+#skill li.one {
+  transition: transform .6s ease;
+}
+#skill .text {
+  position: absolute;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  top: 100px;
+  display: none;
+  transition: 0.5s;
+  opacity: 0;
+  transform: scale(2);
+  transform-origin: center, center, -200px;
+}
+#skill .text p {
+  font: 14px/24px "微软雅黑";
+  word-break: break-all;
+  padding: 8px;
+}
+#skill .text span {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  position: absolute;
+  top: -20px;
+  right: -30px;
+  font: 24px/30px "微软雅黑";
+  cursor: pointer;
+  /* color:darkturquoise; */
+}
+#skill .table {
+  width: 400px;
+  margin: 5px auto 10px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+}
+#skill .table a {
+  width: 100px;
+  height: 12px;
+  padding-top: 94px;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: #889199;
+}
+#skill .table a:nth-of-type(1) {
+  background: url("../img/circle.png") no-repeat center 2px;
+}
+#skill .table a:nth-of-type(2) {
+  background: url("../img/Cone.png") no-repeat center top;
+}
+#skill .table a:nth-of-type(3) {
+  background: url("../img/Column.png") no-repeat center top;
+}
+#skill .table a:nth-of-type(4) {
+  background: url("../img/Column2.png") no-repeat center top;
+}
+#skill .table a:nth-of-type(1):hover {
+  background: url("../img/circle-hover.png") no-repeat center 2px;
+}
+#skill .table a:nth-of-type(2):hover {
+  background: url("../img/Cone-hover.png") no-repeat center top;
+}
+#skill .table a:nth-of-type(3):hover {
+  background: url("../img/Column-hover.png") no-repeat center top;
+}
+#skill .table a:nth-of-type(4):hover {
+  background: url("../img/Column2-hover.png") no-repeat center top;
+}
+#skill .btnWrap {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+}
+#skill .btnWrap .btn {
+  width: 120px;
+  height: 30px;
+  border-radius: 10px;
+  background: #bfc7cf;
+  border: none;
+  font: 14px/28px "微软雅黑";
+  outline: none;
+}
+#skill .btnWrap .btn:hover {
+  background: #052596;
+}
+#certify {
+  position: relative;
+  width: 1200px;
+  height: 500px;
+  margin: 90px auto 0;
+}
+#certify .swiper-container {
+  padding-bottom: 130px;
+}
+#certify .swiper-slide {
+  width: 500px;
+  height: 300px;
+  background: #fff;
+  box-shadow: 0 8px 30px #ddd;
+}
+#certify .swiper-slide img {
+  display: block;
+}
+#certify .swiper-slide p {
+  line-height: 98px;
+  padding-top: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 1.1em;
+  margin: 0;
+}
+.cons {
+  padding-top: 30px;
+  perspective: 1000px;
+}
+.cons img {
+  width: 500px;
+  height: 300px;
+}
+#certify .swiper-button-prev {
+  left: 40px;
+  top: 150px;
+  width: 45px;
+  height: 45px;
+  background: url("../img/prev.png") no-repeat;
+  background-position: 0 0;
+  background-size: 100%;
+  outline: none;
+  cursor: pointer;
+}
+#certify .swiper-button-prev:hover {
+  background-position: 0 -46px;
+  background-size: 100%;
+}
+#certify .swiper-button-next {
+  right: 40px;
+  top: 150px;
+  width: 45px;
+  height: 45px;
+  background: url("../img/prev.png") no-repeat;
+  background-position: 0 -93px;
+  background-size: 100%;
+  outline: none;
+  cursor: pointer;
+}
+#certify .swiper-button-next:hover {
+  background-position: 0 -139px;
+  background-size: 100%;
+}
+#topBtn {
+  display: none;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  padding: 15px;
+  width: 25px;
+  height: 25px;
+  font: 12px/15px "宋体";
+  text-align: center;
+  text-decoration: none;
+  background: #2615c0;
+  color: #fff;
+  border-radius: 50%;
+  animation: 1s ease-in-out shadow infinite alternate;
+}
+@keyframes shadow {
+  0% {
+    box-shadow: 0 0 0 0px rgba(30, 14, 248, 0.3), 0 0 0 10px rgba(28, 2, 175, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 0 15px rgba(143, 178, 243, 0.3), 0 0 0 0px rgba(116, 81, 245, 0.3);
+  }
+}
+#about {
+  background: url(../img/bg.jpg) no-repeat;
+  background-size: 100%;
+  height: 100vh;
+  color: white;
+  min-width: 700px;
+  padding-top: 200px;
+}
+#about p {
+  width: 500px;
+  font: 18px/50px "微软雅黑";
+  margin: 0 auto;
+}
+#about p:nth-child(2n) {
+  text-align: right;
+}
